@@ -1,9 +1,9 @@
 name: Generate PodCast Feeds
 on: [push]
 jobs: 
-  build:
-  runs-on: ubuntu-latest
-  steps:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
     - name: CheckOut Repo
       uses: actions/checkout@v3
     - name: Setup Python
@@ -23,5 +23,3 @@ jobs:
         git add .
         git commit -m "Modified Feed"
         git push
-        
-          
